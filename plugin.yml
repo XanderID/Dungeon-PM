@@ -1,0 +1,6 @@
+name: Dungeon
+author: XanderID
+version: 1.0.0
+main: XanderID\Dungeon\Dungeon
+api: 4.0.0
+description: AutoRegen Block PocketMine Plugin
