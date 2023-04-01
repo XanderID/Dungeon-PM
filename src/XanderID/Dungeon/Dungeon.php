@@ -81,7 +81,7 @@ class Dungeon extends PluginBase implements Listener{
         
         $this->getScheduler()->scheduleDelayedTask(new ClosureTask(
         	function () use($pos, $block){
-            	$pos->getWorld()->setBlock($pos->asVector3(), BlockFactory::getInstance()->get($block->getId()));
+            	$pos->getWorld()->setBlock($pos->asVector3(), BlockFactory::getInstance()->get($block->getId(), 0));
        	 }
         ), 20 * $this->config->get("delay"));
     }
